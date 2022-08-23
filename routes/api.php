@@ -2,12 +2,12 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DishesController;
-use App\Http\Controllers\EmployeesController;
-use App\Http\Controllers\ListDishesOfOrdersController;
-use App\Http\Controllers\MenuSectionsController;
-use App\Http\Controllers\OrderDishesController;
-use App\Http\Controllers\VendorsController;
+use App\Http\Controllers\DishController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ListDishOfOrdersController;
+use App\Http\Controllers\MenuSectionController;
+use App\Http\Controllers\OrderDishController;
+use App\Http\Controllers\VendorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +21,9 @@ use App\Http\Controllers\VendorsController;
 */
 
 Route::resources([
-    'dishes' => DishesController::class, 
-    'employees' => EmployeesController::class,
+    'dishes' => DishController::class, 
+    'employees' => EmployeeController::class,
+    'menu-section' => MenuSectionController::class, 
 ]);
 
 

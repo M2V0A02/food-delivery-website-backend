@@ -4,8 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use OrderDish;
 
-class Menu_section extends Model
+class MenuSection extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'vendor_id',
+        'name',
+    ];
 }
