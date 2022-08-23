@@ -2,7 +2,12 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DishesController;
 use App\Http\Controllers\EmployeesController;
+use App\Http\Controllers\ListDishesOfOrdersController;
+use App\Http\Controllers\MenuSectionsController;
+use App\Http\Controllers\OrderDishesController;
+use App\Http\Controllers\VendorsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +20,10 @@ use App\Http\Controllers\EmployeesController;
 |
 */
 
-Route::resource('employees', EmployeesController::class);
+Route::resources([
+    'dishes' => DishesController::class, 
+    'employees' => EmployeesController::class,
+]);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
