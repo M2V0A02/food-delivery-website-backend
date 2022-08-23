@@ -25,7 +25,7 @@ Route::resources([
     'employees' => EmployeeController::class,
     'menu-sections' => MenuSectionController::class,
     'list-dishes-of-orders-controller' => ListDishOfOrdersController::class,
-    'order-dishes-controller' => OrderDishController::class,
+    'order-dishes-controller' => OrderFoodController::class,
     'vendors' => VendorController::class, 
 ]);
 

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class OrderFood extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'orderDate',
+        'employee_id', 
+    ];
 }
