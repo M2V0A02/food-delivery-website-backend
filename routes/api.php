@@ -23,7 +23,10 @@ use App\Http\Controllers\VendorController;
 Route::resources([
     'dishes' => DishController::class, 
     'employees' => EmployeeController::class,
-    'menu-section' => MenuSectionController::class, 
+    'menu-sections' => MenuSectionController::class,
+    'list-dishes-of-orders-controller' => ListDishOfOrdersController::class,
+    'order-dishes-controller' => OrderDishController::class,
+    'vendors' => VendorController::class, 
 ]);
 
 

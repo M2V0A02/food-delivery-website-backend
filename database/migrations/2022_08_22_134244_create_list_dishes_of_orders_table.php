@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('list_dishes_of_orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('order_dish_id');
-            $table->foreign('order_dish_id')->references('id')->on('order_dishes');
+            $table->unsignedBigInteger('order_food_id');
+            $table->foreign('order_food_id')->references('id')->on('order_foods');
             $table->unsignedBigInteger('dish_id');
             $table->foreign('dish_id')->references('id')->on('dishes');
             $table->timestamps();
